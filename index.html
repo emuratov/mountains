@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+	</script>
+</head>
+<body>
+<div class="main">
+	<div class="nav">
+		<div class="logo">
+			<a href="#"><img src="img/logo.png" alt="Logo"></a>
+		</div>
+		<ul>
+			<li><a href="#">our story</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">work</a></li>
+			<li><a href="#">journal</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+		<div class="callus">
+			<a href="#">CALL US</a>
+		</div>
+	</div>
+		<div class="contentMain">
+			<img src="img/travel.png" alt="">
+		</div>
+</div>
+
+<div class="blog">
+	<div class="content">
+		<div class="wrap">
+			<h1>ABOUT US</h1>
+			<p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+			<a href="#">READ MORE</a>
+		</div>
+	</div>
+</div>
+
+<div class="journal">
+	asd
+</div>
+
+<script>
+	$(document).ready(function(){
+	$(".main").height(($(document).width()-17)*0.3635416666666667+0.1);
+	$(".blog").height(($(document).width()-17)*0.3635416666666667+0.1);
+	});
+	
+	$( window ).resize(function(){
+	$(".main").height(($(document).width()-17)*0.3635416666666667+0.1);
+	$(".blog").height(($(document).width()-17)*0.3635416666666667+0.1);
+	});
+</script>
+
+</body>
+</html>

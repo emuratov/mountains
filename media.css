@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  .nav {
+    padding: 0;
+  }
+  .nav ul {
+    visibility: hidden;
+    position: absolute;
+  }
+}
