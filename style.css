@@ -180,6 +180,8 @@ body {
   background-color: #36aeea;
   color: black;
   opacity: 0.5;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -199,14 +201,13 @@ body {
 .content {
   display: inherit;
   position: absolute;
-  top: 48vh;
   width: 80%;
   padding-left: 10%;
   height: inherit;
   background-image: url(img/bgBlog3.png), url(img/bgBlog2.png), url(img/bgBlog.png);
   background-size: 20% auto, 40% auto, 80% auto;
   background-repeat: no-repeat;
-  background-position: 67% 92%, right top,center top;
+  background-position: 67% 92%, right top,center 50%;
 }
 .content .wrap {
   display: -webkit-box;
@@ -221,7 +222,7 @@ body {
 }
 .content .wrap h1 {
   font-weight: bold;
-  margin-top: 40%;
+  margin-top: 53%;
 }
 .content .wrap p {
   margin-top: 7%;
@@ -239,4 +240,97 @@ body {
   font-size: 0.7rem;
   text-align: center;
   border-radius: 3px;
+}
+.content .wrap a:hover {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.journal {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+.journal img {
+  padding-top: 5%;
+  display: block;
+  width: 8%;
+  padding-left: 46%;
+}
+.journal h1 {
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 3%;
+}
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.post {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.post img {
+  width: 100%;
+  padding: 0;
+}
+.post p {
+  color: #36aeea;
+  text-transform: uppercase;
+}
+.post h1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 0 10% 0 10%;
+}
+.post span {
+  line-height: 1.5rem;
+  font-size: 80%;
+  padding: 0 10% 0 10%;
+}
+.post :hover {
+  opacity: 0.8;
+}
+.offer {
+  width: 100%;
+  background-image: url(img/bgOffer2.png), url(img/bgOffer1.png);
+  background-repeat: no-repeat;
+  background-size: 15%, 100%;
+  background-position: 60% bottom;
+}
+.secOffer {
+  background-image: url(img/bgOffer2.png);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: right bottom;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  width: 80%;
+  height: inherit;
 }

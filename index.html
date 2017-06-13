@@ -40,18 +40,64 @@
 </div>
 
 <div class="journal">
-	asd
+	<img src="img/wawes.png" alt="">
+	<h1>our journal</h1>
+	<div class="posts">
+		<div class="post">
+			<img src="img/post1.png" alt="">
+		</div>
+		<div class="post">
+				<p>Love</p>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<span>You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+				</span>
+				<span>01</span>
+		</div>
+		<div class="post">
+			<img src="img/post2.png" alt="">
+		</div>
+		<div class="post">
+			<p>tree</p>
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h1>
+			<span>The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
+			</span>
+			<span>02</span>
+		</div>
+		<div class="post">
+			<img src="img/post3.png" alt="">
+		</div>
+
+		<div class="post">
+			<p>water</p>
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+			<span>What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?
+			</span>
+			<span>03</span>
+		</div>
+
+	</div>
+</div>
+
+<div class="offer">
+	<div class="secOffer">
+		
+	</div>
 </div>
 
 <script>
 	$(document).ready(function(){
 	$(".main").height(($(document).width()-17)*0.3635416666666667+0.1);
 	$(".blog").height(($(document).width()-17)*0.3635416666666667+0.1);
+	$(".content").offset({top:(($(document).width()-17)*0.3635416666666667+0.1)*0.95, left:0});
+	$(".offer").height(($(document).width()-17)*0.3828125+0.1);
+	
 	});
 	
 	$( window ).resize(function(){
 	$(".main").height(($(document).width()-17)*0.3635416666666667+0.1);
 	$(".blog").height(($(document).width()-17)*0.3635416666666667+0.1);
+	$(".content").offset({top:(($(document).width()-17)*0.3635416666666667+0.1)*0.95, left:0});
+	$(".offer").height(($(document).width()-17)*0.3828125+0.1);
 	});
 </script>
 
