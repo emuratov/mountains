@@ -326,11 +326,74 @@ body {
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: right bottom;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  /*		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);*/
   width: 80%;
+  padding-left: 10%;
   height: inherit;
+}
+.wrapOffer {
+  width: 50%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.wrapOffer img {
+  width: 15%;
+}
+.wrapOffer h1 {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.wrapOffer span {
+  line-height: 1.5rem;
+  font-size: 80%;
+}
+.inpOffer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.inpOffer input[type="submit"] {
+  height: 100%;
+  width: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #36aeea;
+  max-width: 40%;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 3px;
+  padding: 2% 4% 2% 4%;
+  white-space: nowrap;
+}
+.inpOffer input[type="submit"]:hover {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.inpOffer input {
+  border: none;
+  width: 100%;
+}
+.block {
+  display: inherit;
+}
+.block img {
+  width: 50%;
 }
